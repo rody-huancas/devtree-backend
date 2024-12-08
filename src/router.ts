@@ -2,8 +2,9 @@ import { Router } from "express";
 
 const router: Router = Router();
 
-router.get("/", (req, res) => {
-  res.send("Hola Mundo");
-});
+/* Autenticación y Registro */
+router.post("/auth/register", (req, res) => {
+  res.send("first")
+})
 
 export default router;
