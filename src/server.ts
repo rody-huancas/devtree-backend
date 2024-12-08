@@ -5,6 +5,7 @@ import router from "./router";
 import { connectDB } from "./config/database";
 
 const app: Express = express();
+app.use(express.json());
 
 connectDB();
 
